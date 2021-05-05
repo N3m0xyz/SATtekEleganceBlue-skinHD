@@ -20,16 +20,16 @@
     <color name="rssviewtop" value="#45005050" />
     <color name="STekEBbg1" value="#2f000000" />
     <color name="STekEBbg2" value="#55001123" />
-    <color name="STekEBbg3" value="#00001ec9" />
+    <color name="STekEBbg3" value="#00007eff" />
     <color name="STekEBFont1" value="#00ffffff" />
     <color name="STekEBFont2" value="#00fcc000" />
     <color name="STekEBLine" value="#00cccccc" />
     <color name="STekEBLine2" value="#0099c1ff" />
     <color name="STekEBLine3" value="#00ffffff" />
     <color name="STekEBMarked" value="#000c5b00" />
-    <color name="STekEBProgress" value="#00001ec9" />
+    <color name="STekEBProgress" value="#00007eff" />
     <color name="STekEBProgress2" value="#1effffff" />
-    <color name="STekEBSelection" value="#00001ec9" />
+    <color name="STekEBSelection" value="#00007eff" />
     <color name="STekEBSelFont" value="#00ffffff" />
     <color name="transparent" value="#ff002b57" />
     <color name="transpBlack" value="#80000000" />
@@ -785,7 +785,7 @@
     <widget source="session.CurrentService" render="PositionGauge" position="151,682" size="980,7" transparent="1" zPosition="-8">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" render="Progress" position="151,684" size="980,5" backgroundColor="STekEBProgress" borderWidth="0" transparent="1" zPosition="-9">
+    <widget source="session.CurrentService" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" render="Progress" position="151,684" size="980,5" backgroundColor="STekEBProgress" borderWidth="0" transparent="1" zPosition="-9">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="1140,660" size="120,40" font="EleganceBLUE; 35" halign="center" valign="center" backgroundColor="STekEBbg1" transparent="1">
@@ -1142,7 +1142,7 @@
     <widget source="session.CurrentService" render="Label" position="287,425" size="119,32" zPosition="2" font="Regular; 22" halign="right" backgroundColor="STekEBbg2" noWrap="1" transparent="1" foregroundColor="STekEBFont1">
       <convert type="ServicePosition">Length,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" position="21,410" size="387,5" zPosition="1" transparent="1">
+    <widget source="session.CurrentService" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" position="21,410" size="387,5" zPosition="1" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <!-- /*ClockWidget-->
@@ -1326,7 +1326,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <eLabel name="progressbar-back" position="229,650" size="1029,1" backgroundColor="STekEBLine3" />
-    <widget source="session.Event_Now" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" backgroundColor="STekEBProgress" position="229,648" size="1029,5" zPosition="7" transparent="1">
+    <widget source="session.Event_Now" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" backgroundColor="STekEBProgress" position="229,648" size="1029,5" zPosition="7" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="1136,656" size="50,28" font="Regular; 19" halign="right" backgroundColor="STekEBbg1" foregroundColor="STekEBFont1" transparent="1" noWrap="1" valign="top">
@@ -1523,7 +1523,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="pfree" position="860,573" size="100,25" font="EleganceBLUE; 18" />
     <eLabel name="progressbar-back" position="234,626" size="820,2" backgroundColor="STekEBLine3" zPosition="2" />
     <eLabel name="line" position="235,154" size="825,1" backgroundColor="STekEBLine3" zPosition="2" />
-    <widget name="slide" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" backgroundColor="STekEBProgress" position="234,625" size="820,4" zPosition="7" transparent="1">
+    <widget name="slide" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" backgroundColor="STekEBProgress" position="234,625" size="820,4" zPosition="7" transparent="1">
       <convert type="slide">Progress</convert>
     </widget>
     <panel name="PANEL_BUTTONBAR_RGB_X" />
@@ -1758,10 +1758,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="BAR_ICON_SYS_SOFT" />
     <panel name="TITLE_UC" />
-    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
+    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
     <widget name="package" position="517,190" size="726,40" font="Regular;20" backgroundColor="STekEBbg1" transparent="1" />
     <widget name="status" position="517,90" size="726,80" font="EleganceBLUE;26" backgroundColor="STekEBbg1" transparent="1" />
-    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" transparent="1" zPosition="30" />
+    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" transparent="1" zPosition="30" />
     <eLabel backgroundColor="STekEBLine3" position="517,177" size="726,1" />
     <eLabel backgroundColor="STekEBLine3" position="517,242" size="726,1" />
     <panel name="PANEL_KEY_EXIT" />
@@ -1778,10 +1778,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="BAR_ICON_SYS_SOFT" />
     <panel name="TITLE_UC" />
     <widget name="list" position="517,135" size="726,420" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
-    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
+    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
     <widget source="package" render="Label" position="517,190" size="726,40" font="Regular;20" backgroundColor="STekEBbg1" transparent="1" />
     <widget source="status" render="Label" position="517,90" size="726,80" font="EleganceBLUE;26" backgroundColor="STekEBbg1" transparent="1" />
-    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" transparent="1" zPosition="30" />
+    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" transparent="1" zPosition="30" />
     <eLabel backgroundColor="STekEBLine3" position="517,177" size="726,1" />
     <eLabel backgroundColor="STekEBLine3" position="517,242" size="726,1" />
   </screen>
@@ -1793,7 +1793,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="session.CurrentService" render="Label" position="1177,176" size="80,27" font="Regular; 20" halign="left" backgroundColor="STekEBbg1">
       <convert type="ServicePosition">Length</convert>
     </widget>
-    <widget source="session.CurrentService" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" position="115,187" size="1050,5" zPosition="5" transparent="1">
+    <widget source="session.CurrentService" render="Progress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" position="115,187" size="1050,5" zPosition="5" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
     <eLabel name="" position="center,189" size="1050,1" backgroundColor="STekEBLine3" foregroundColor="STekEBLine3" zPosition="1" />
@@ -1966,7 +1966,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="network" position="517,124" size="726,40" font="EleganceBLUE;30" backgroundColor="STekEBbg1" transparent="1" />
     <widget name="pass" position="517,169" size="726,40" font="EleganceBLUE;30" backgroundColor="STekEBbg1" transparent="1" />
     <widget name="transponder" position="517,214" size="726,40" font="EleganceBLUE;30" backgroundColor="STekEBbg1" transparent="1" />
-    <widget name="scan_progress" position="517,265" size="726,5" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" transparent="1" zPosition="10" />
+    <widget name="scan_progress" position="517,265" size="726,5" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" transparent="1" zPosition="10" />
     <eLabel name="" position="517,267" size="726,1" backgroundColor="STekEBLine3" zPosition="-1" />
     <widget name="servicelist" position="517,281" size="726,360" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
   </screen>
@@ -2367,7 +2367,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Progress" position="135,550" size="1004,5" borderWidth="0" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" transparent="1" zPosition="20">
+    <widget source="Event" render="Progress" position="135,550" size="1004,5" borderWidth="0" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" transparent="1" zPosition="20">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="Event" render="Label" position="76,572" size="1141,79" font="Regular; 19" backgroundColor="STekEBbg1" transparent="1" valign="top">
@@ -2793,7 +2793,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="TITLE_UC" />
     <widget source="job_name" render="Label" position="517,83" size="726,40" font="Regular;30" />
     <widget source="job_task" render="Label" position="517,211" size="726,40" font="Regular;23" zPosition="2" />
-    <widget source="job_progress" render="Progress" position="517,293" size="726,5" borderWidth="0" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" zPosition="10" />
+    <widget source="job_progress" render="Progress" position="517,293" size="726,5" borderWidth="0" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" zPosition="10" />
     <widget source="job_progress" render="Label" position="741,305" size="280,32" font="Regular;28" foregroundColor="STekEBFont1" zPosition="2" halign="center" transparent="1">
       <convert type="ProgressToText" />
     </widget>
@@ -2855,10 +2855,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="BAR_ICON_SYS_SOFT" />
     <panel name="TITLE_UC" />
-    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
+    <widget name="slider" backgroundColor="STekEBProgress" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" position="517,175" size="726,5" borderWidth="0" transparent="1" zPosition="30" />
     <widget name="package" position="517,190" size="726,40" font="Regular;20" backgroundColor="STekEBbg1" transparent="1" />
     <widget name="status" position="517,90" size="726,80" font="EleganceBLUE;26" backgroundColor="STekEBbg1" transparent="1" />
-    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" transparent="1" zPosition="30" />
+    <widget name="activityslider" position="517,240" size="726,5" borderWidth="0" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" transparent="1" zPosition="30" />
     <eLabel backgroundColor="STekEBLine3" position="517,177" size="726,1" />
     <eLabel backgroundColor="STekEBLine3" position="517,242" size="726,1" />
     <panel name="PANEL_KEY_EXIT" />
@@ -3432,7 +3432,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget source="session.CurrentService" render="PositionGauge" position="151,622" size="980,7" transparent="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" pixmap="SATtek-EleganceBLUE/colors/00001ec9.png" render="Progress" position="151,624" size="980,5" backgroundColor="STekEBProgress" borderWidth="0" transparent="1">
+    <widget source="session.CurrentService" pixmap="SATtek-EleganceBLUE/colors/00007eff.png" render="Progress" position="151,624" size="980,5" backgroundColor="STekEBProgress" borderWidth="0" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
   </screen>
