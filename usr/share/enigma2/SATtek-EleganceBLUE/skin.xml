@@ -1,6 +1,6 @@
 <skin>
   <!-- SATtekEleganceBLUE v3.0 skin mod by Nemoxyz - All devices - NEW METEO Widget -->
-  <!-- Originally modified from STekEBbluev2 skin by SINTHEX - Many thanks to the author -->
+  <!-- Originally modified from PAXblue skin - Many thanks to the author -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
   </output>
@@ -35,6 +35,7 @@
     <color name="transpBlack" value="#80000000" />
     <color name="transpWhite" value="#77ffffff" />
     <color name="transpyellow" value="#33bab329" />
+    <color name="un10000000" value="#10000000" />
     <color name="un18080911" value="#18080911" />
     <color name="un1c202b" value="#001c202b" />
     <color name="un1f771f" value="#001f771f" />
@@ -191,43 +192,27 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <ePixmap name="menu-top" position="0,0" size="940,53" pixmap="SATtek-EleganceBLUE/construct/menu-top.png" alphatest="blend" zPosition="-2" />
-    <!-- <panel name="PANEL_WEATHER_WIDGET_OFF"/> -->
-  </screen>
-  <screen name="PANEL_WEATHER_WIDGET">
-    <ePixmap name="" position="920,0" size="360,51" pixmap="SATtek-EleganceBLUE/construct/general/weather-back.png" alphatest="blend" zPosition="-1" />
-    <widget backgroundColor="STekEBbg1" font="Regular; 32" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="957,2" render="Label" size="80,45" source="session.MSNWeather" transparent="1" zPosition="15">
-      <convert type="STekEBWeather">tempnow</convert>
+    <!-- /* WEATHER WIDGET  -->
+    <ePixmap name="" position="920,0" size="360,51" alphatest="blend" pixmap="SATtek-EleganceBLUE/construct/general/weather-back.png" zPosition="-1" />
+    <widget backgroundColor="STekEBbg1" font="Regular; 14" foregroundColor="STekEBFont1" halign="center" noWrap="1" position="942,0" render="Label" size="160,18" source="session.MSNWeather" transparent="1" valign="center" zPosition="15">
+      <convert type="MSNWeather">city</convert>
     </widget>
-    <widget backgroundColor="STekEBbg1" font="Meteo; 42" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="session.MSNWeather" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather">meteonow</convert>
+    <widget backgroundColor="STekEBbg1" font="Regular; 33" foregroundColor="STekEBFont1" halign="right" noWrap="1" position="967,6" render="Label" size="70,42" source="session.MSNWeather" transparent="1" valign="top" zPosition="10">
+      <convert type="MSNWeather">temperature_current</convert>
     </widget>
-    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="session.MSNWeather" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather">highnext</convert>
+    <widget backgroundColor="STekEBbg3" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1210,4" render="MSNWeatherPixmap" size="43,43" source="session.MSNWeather" transparent="1" alphatest="blend" valign="center" zPosition="15">
+      <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
     </widget>
-    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1142,23" render="Label" size="44,26" source="session.MSNWeather" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather">lownext</convert>
+    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="session.MSNWeather" transparent="1" valign="center" zPosition="10">
+      <convert type="MSNWeather">temperature_high,day2</convert>
     </widget>
-    <widget backgroundColor="STekEBbg3" font="Meteo; 42" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="session.MSNWeather" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather">meteonext</convert>
+    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1142,24" render="Label" size="44,26" source="session.MSNWeather" transparent="1" valign="center" zPosition="10">
+      <convert type="MSNWeather">temperature_low,day2</convert>
     </widget>
-  </screen>
-  <screen name="PANEL_WEATHER_WIDGET2">
-    <ePixmap name="" position="920,0" size="360,51" pixmap="SATtek-EleganceBLUE/construct/general/weather-back.png" alphatest="blend" zPosition="-1" />
-    <widget backgroundColor="STekEBbg1" font="Regular; 32" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="957,2" render="Label" size="80,45" source="session.CurrentService" transparent="1" zPosition="15">
-      <convert type="STekEBWeather2">tempnow</convert>
+    <widget backgroundColor="STekEBbg1" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1057,4" render="MSNWeatherPixmap" size="43,43" source="session.MSNWeather" transparent="1" alphatest="blend" valign="center" zPosition="15">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
     </widget>
-    <widget backgroundColor="STekEBbg1" font="Meteo; 42" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather2">meteonow</convert>
-    </widget>
-    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather2">highnext</convert>
-    </widget>
-    <widget backgroundColor="STekEBbg3" font="Regular; 16" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1142,23" render="Label" size="44,26" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather2">lownext</convert>
-    </widget>
-    <widget backgroundColor="STekEBbg3" font="Meteo; 42" foregroundColor="STekEBFont1" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
-      <convert type="STekEBWeather2">meteonext</convert>
-    </widget>
+    <!--	WEATHER WIDGET */ -->
   </screen>
   <screen name="PANEL_WINDOW_FULL">
     <ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="SATtek-EleganceBLUE/construct/menu-band.png" alphatest="blend" zPosition="-2" />
@@ -587,7 +572,7 @@
   </screen>
   <screen name="PANEL_BUTTONBAR_R_X">
     <ePixmap pixmap="SATtek-EleganceBLUE/buttons/key_red.png" position="879,680" size="30,40" alphatest="blend" />
-    <widget source="key_red" render="Label" position="903,685" size="270,27" zPosition="1" font="Regular; 20" halign="left" backgroundColor="STekEBbg1" transparent="1" />
+    <widget source="key_red" render="Label" position="903,685" size="270,27" zPosition="1" font="Regular; 20" halign="center" backgroundColor="STekEBbg1" transparent="1" />
     <panel name="PANEL_KEY_EXIT" />
     <ePixmap name="" position="879,680" size="400,40" pixmap="SATtek-EleganceBLUE/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
   </screen>
@@ -3276,7 +3261,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/menu/main/setup.png" transparent="1" alphatest="blend" />
     <widget source="help" render="Label" position="517,540" size="726,108" font="Regular;20" halign="center" valign="center" backgroundColor="STekEBbg1" transparent="1" foregroundColor="STekEBFont2" />
   </screen>
-  <screen name="EMCImdbScan" position="center,center" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
+  <screen name="EMCImdbScan" position="0,1" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="TITLE_UC" />
     <!-- Info: Amount of searched Covers -->
@@ -3347,7 +3332,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="EMCSelection" position="center,center" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PANEL_BUTTONBAR_RGYB_MENU_X" />
     <panel name="PANEL_WINDOW_MENU" />
-    <eLabel text="E n h a n c e d	M o v i e	C e n t e r" position="345,2" size="564,45" font="EleganceBLUE; 32" foregroundColor="foreground" backgroundColor="un444444" transparent="1" />
+    <eLabel text="E n h a n c e d	 M o v i e	C e n t e r" position="345,2" size="564,45" font="EleganceBLUE; 32" foregroundColor="foreground" backgroundColor="un444444" transparent="1" />
     <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/plugins/emc.png" transparent="1" alphatest="blend" />
     <widget name="Cover" position="517,535" size="80,100" zPosition="3" alphatest="on" />
     <widget source="Title" render="Label" position="517,70" size="726,35" font="EleganceBLUE;25" halign="center" valign="center" foregroundColor="unbab329" backgroundColor="un444444" transparent="1" />
@@ -3364,7 +3349,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="EMCEventName">ExtendedDescription</convert>
     </widget>
   </screen>
-  <screen name="MovieMenu" position="0,0" size="1280,720" title="EMC menu" backgroundColor="transparent">
+  <screen name="EMCMenu" position="0,0" size="1280,720" title="EMC menu" backgroundColor="transparent">
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="PANEL_BUTTONBAR_OK_X" />
     <eLabel text="E n h a n c e d	M o v i e	C e n t e r" position="345,2" size="564,45" font="EleganceBLUE; 32" foregroundColor="foreground" backgroundColor="un444444" transparent="1" />
@@ -3587,23 +3572,59 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="PANEL_BUTTONBAR_RGY_X" />
   </screen>
   <screen name="MSNWeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="PANEL_WINDOW_MENU" />
-    <eLabel text="WeatherPlugin: List of Entries" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
-    <widget name="entrylist" position="517,80" size="726,570" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
-    <panel name="PANEL_BUTTONBAR_RGYB_X" />
-  </screen>
+  <panel name="PANEL_WINDOW_MENU" />
+  <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/menu/system/weather.png" transparent="1" alphatest="blend" />
+  <eLabel text="WeatherPlugin: List of Entries" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
+  <widget name="entrylist" position="517,80" size="726,570" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
+  <panel name="PANEL_BUTTONBAR_RGYB_X" />
+</screen>
   <screen name="MSNWeatherPluginEntryConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="PANEL_WINDOW_MENU" />
-    <eLabel text="WeatherPlugin: Edit Entry" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
-    <widget name="config" position="517,80" size="726,570" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
-    <panel name="PANEL_BUTTONBAR_RGYB_X" />
-  </screen>
+  <panel name="PANEL_WINDOW_MENU" />
+  <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/menu/system/weather.png" transparent="1" alphatest="blend" />
+  <eLabel text="WeatherPlugin: Edit Entry" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
+  <widget name="config" position="517,80" size="726,570" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
+  <panel name="PANEL_BUTTONBAR_RGYB_X" />
+</screen>
   <screen name="MSNWeatherPluginSearch" position="0,0" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="transparent" zPosition="9">
-    <panel name="PANEL_WINDOW_MENU" />
-    <eLabel text="WeatherPlugin: Searchresult" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
-    <widget name="entrylist" position="517,86" size="726,540" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
-    <panel name="PANEL_BUTTONBAR_RGYB_X" />
-  </screen>
+  <panel name="PANEL_WINDOW_MENU" />
+  <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/menu/system/weather.png" transparent="1" alphatest="blend" />
+  <eLabel text="WeatherPlugin: Searchresult" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="0" backgroundColor="STekEBbg1" />
+  <widget name="entrylist" position="517,86" size="726,540" itemHeight="60" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="STekEBbg1" transparent="1" />
+  <panel name="PANEL_BUTTONBAR_RGYB_X" />
+</screen>
+  <screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="PANEL_WINDOW_MENU" />
+  <ePixmap position="149,284" size="200,200" zPosition="2" pixmap="SATtek-EleganceBLUE/construct/menu/system/weather.png" transparent="1" alphatest="blend" />
+  <widget render="Label" source="caption" position="563,86" size="573,35" font="EleganceBLUE; 30" zPosition="1" transparent="1" backgroundColor="black" foregroundColor="white" halign="left" valign="center" />
+  <widget render="Label" source="observationtime" position="881,342" zPosition="1" size="300,30" font="EleganceBLUE; 23" transparent="1" halign="left" backgroundColor="black" valign="center" foregroundColor="un808888" />
+  <widget render="Label" source="observationpoint" position="857,255" zPosition="1" size="340,80" font="EleganceBLUE; 23" transparent="1" halign="left" backgroundColor="black" valign="center" foregroundColor="un808888" />
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="564,123" size="175,120" source="session.MSNWeather" transparent="1" zPosition="10">
+  <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
+</widget>
+  <widget render="Label" source="currentTemp" position="881,124" zPosition="1" size="239,120" font="EleganceBLUE; 75" transparent="1" backgroundColor="black" halign="center" valign="top" />
+  <widget render="Label" source="feelsliketemp" position="914,216" zPosition="1" size="173,27" font="EleganceBLUE; 22" transparent="1" backgroundColor="black" halign="center" />
+  <widget render="Label" source="condition" position="525,253" zPosition="1" size="300,32" font="EleganceBLUE; 30" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+  <widget render="Label" source="wind_condition" position="525,290" zPosition="1" size="300,32" font="EleganceBLUE; 28" transparent="1" backgroundColor="black" halign="left" valign="center" foregroundColor="grey" />
+  <widget render="Label" source="humidity" position="525,327" zPosition="1" size="218,32" font="EleganceBLUE; 28" valign="center" transparent="1" backgroundColor="black" halign="left" foregroundColor="grey" />
+  <widget render="Label" source="weekday2" position="509,387" zPosition="1" size="205,57" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="551,446" size="115,80" source="session.MSNWeather" transparent="1" zPosition="10">
+  <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
+</widget>
+  <widget render="Label" source="weekday2_temp" position="512,524" zPosition="1" size="202,75" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="weekday3_temp" position="734,524" zPosition="1" size="202,75" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="775,446" size="115,80" source="session.MSNWeather" transparent="1" zPosition="10">
+  <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
+</widget>
+  <widget render="Label" source="weekday3" position="734,387" zPosition="1" size="205,57" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="weekday4_temp" position="960,524" zPosition="1" size="202,75" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1004,446" size="115,80" source="session.MSNWeather" transparent="1" zPosition="10">
+  <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/SATtek-EleganceBLUE/construct/NemoxyzDesign/weather_icons/,png</convert>
+</widget>
+  <widget render="Label" source="weekday4" position="958,387" zPosition="1" size="205,57" halign="center" valign="center" font="EleganceBLUE; 20" transparent="1" backgroundColor="black" />
+  <widget render="Label" source="statustext" position="235,136" zPosition="0" size="0,465" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="background" />
+  <eLabel name="" position="550,610" size="600,35" text="Press MENU key to Setup Local Settings" backgroundColor="black" transparent="1" font="EleganceBLUE; 30" halign="center" zPosition="1" />
+<panel name="PANEL_BUTTONBAR_R_X" />
+</screen>
   <screen name="QuitMainloopScreen" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
     <ePixmap position="0,0" zPosition="1" size="1280,720" pixmap="SATtek-EleganceBLUE/construct/NemoxyzDesign/Shutdown-STeleganceBLUE-NemoMOD.png" />
   </screen>
