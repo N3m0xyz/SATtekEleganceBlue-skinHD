@@ -2126,13 +2126,22 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="RtpText" position="100,650" size="1080,30" font="EleganceBLUE;24" halign="right" noWrap="1" backgroundColor="STekEBbg1" shadowOffset="-2,-2" shadowColor="transpBlack" />
     <widget name="RassLogo" position="0,0" size="40,40" />
   </screen>
-  <screen name="AboutOE" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- Information SCREENS OEAlliance Nemoxyz MOD ver2022 -->
+  <screen name="Information" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="PANEL_BUTTONBAR_RGYB_X" />
     <panel name="BAR_ICON_TB" />
-    <widget source="AboutHeader" render="Label" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="100" backgroundColor="STekEBbg1" noWrap="1" />
-    <widget name="AboutScrollLabel" split="1" dividechar=":" position="517,77" size="726,580" font="Regular;21" backgroundColor="STekEBbg1" transparent="1" />
+    <widget source="description" render="Label" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="100" backgroundColor="STekEBbg1" noWrap="1" />
+    <widget name="information" split="1" dividechar=":" position="517,77" size="726,580" font="Regular;21" backgroundColor="STekEBbg1" transparent="1" />
   </screen>
+  <screen name="InformationImage" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="PANEL_WINDOW_MENU" />
+    <panel name="PANEL_BUTTONBAR_RGYB_X" />
+    <panel name="BAR_ICON_TB" />
+    <widget source="name" render="Label" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="100" backgroundColor="STekEBbg1" noWrap="1" />
+    <widget name="image" split="1" dividechar=":" position="517,77" size="726,580" font="Regular;21" backgroundColor="STekEBbg1" transparent="1" />
+  </screen>
+  <!-- Information SCREENS OEAlliance Nemoxyz MOD ver2022 -->
   <screen name="CommitInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="BAR_ICON_TB" />
