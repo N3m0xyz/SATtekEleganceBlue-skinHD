@@ -2127,14 +2127,14 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="RassLogo" position="0,0" size="40,40" />
   </screen>
   <!-- Information SCREENS OEAlliance Nemoxyz MOD ver2022 -->
-  <screen name="Information" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="PANEL_WINDOW_MENU" />
-    <panel name="PANEL_BUTTONBAR_RGYB_X" />
-    <panel name="BAR_ICON_TB" />
-    <widget source="description" render="Label" position="345,2" size="564,45" font="EleganceBLUE; 32" transparent="1" valign="top" zPosition="100" backgroundColor="STekEBbg1" noWrap="1" />
-    <widget name="information" split="1" dividechar=":" position="517,77" size="726,580" font="Regular;21" backgroundColor="STekEBbg1" transparent="1" />
-  </screen>
-  <screen name="InformationImage" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="Information" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <panel name="PANEL_WINDOW_MENU" />
+  <panel name="PANEL_BUTTONBAR_RGYB_X" />
+  <panel name="BAR_ICON_TB" />
+  <widget name="description" position="345,2" size="564,45" font="EleganceBLUE; 32" backgroundColor="STekEBbg1" transparent="1" noWrap="1" render="Label" text="SATtek Elegance BLUE Info" />
+  <widget name="information" split="1" position="517,77" size="726,580" font="Regular;21" backgroundColor="STekEBbg1" transparent="1" />
+</screen>
+  <screen name="InformationImage" position="0,0" size="1280,720" title="Receiver Image" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="PANEL_WINDOW_MENU" />
     <panel name="PANEL_BUTTONBAR_RGYB_X" />
     <panel name="BAR_ICON_TB" />
