@@ -1739,7 +1739,7 @@
     <panel name="PANEL_STeleganceBLUE_TOP" />
     <widget name="Volume" position="425,22" size="390,5" zPosition="3" foregroundColor="STekEBProgress" transparent="1" />
     <ePixmap position="365,0" size="48,48" zPosition="1" pixmap="SATtek-EleganceBLUE/NemoxyzConstruct/general/sound.png" transparent="0" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Volume2Text" position="835,2" size="80,45" font="EleganceBLUE; 32" foregroundColor="STekEBFont1" backgroundColor="STekEBbg1" zPosition="1" transparent="1" />
+    <widget source="global.CurrentTime" render="VolumeText" position="835,2" size="80,45" font="EleganceBLUE; 32" foregroundColor="STekEBFont1" backgroundColor="STekEBbg1" zPosition="1" transparent="1" />
     <eLabel position="425,24" size="390,1" backgroundColor="STekEBLine3" foregroundColor="STekEBLine3" />
   </screen>
   <screen name="Mute" position="0,0" size="1280,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
